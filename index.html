@@ -30,16 +30,17 @@ s.parentNode.insertBefore(t,s)}
 (window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1426986666015681');
+fbq('init', '1110168904772708');
 fbq('track', 'PageView');
 </script>
+
 
 <noscript>
 <img
   height="1"
   width="1"
   style="display:none"
-  src="https://www.facebook.com/tr?id=1426986666015681&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=1110168904772708&ev=PageView&noscript=1"
 />
 </noscript>
 
@@ -59,7 +60,11 @@ html{
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
   background:
     radial-gradient(
@@ -70,20 +75,28 @@ body{
       #000000 100%
     );
 
-  color:#fff;
+  color:#ffffff;
 
   min-height:100vh;
 
   overflow-x:hidden;
 }
 
+
+/* MAIN PAGE */
+
 .page{
+
   width:100%;
+
   max-width:720px;
 
   margin:0 auto;
 
-  padding:28px 16px 35px;
+  padding:
+    28px
+    16px
+    35px;
 
   text-align:center;
 }
@@ -95,9 +108,13 @@ body{
 
   display:inline-block;
 
-  padding:10px 22px;
+  padding:
+    10px
+    22px;
 
-  border:1px solid rgba(255,35,35,.75);
+  border:
+    1px solid
+    rgba(255,35,35,.75);
 
   border-radius:30px;
 
@@ -112,7 +129,8 @@ body{
   margin-bottom:30px;
 
   box-shadow:
-    0 0 20px rgba(255,0,0,.12);
+    0 0 20px
+    rgba(255,0,0,.12);
 }
 
 
@@ -130,6 +148,7 @@ body{
   display:flex;
 
   align-items:center;
+
   justify-content:center;
 
   background:
@@ -140,17 +159,26 @@ body{
       #350000 100%
     );
 
-  border:3px solid #ff3838;
+  border:
+    3px solid
+    #ff3838;
 
   box-shadow:
-    0 0 18px rgba(255,30,30,.9),
-    0 0 45px rgba(255,0,0,.35),
-    inset 0 0 25px rgba(255,255,255,.08);
+
+    0 0 18px
+    rgba(255,30,30,.9),
+
+    0 0 45px
+    rgba(255,0,0,.35),
+
+    inset 0 0 25px
+    rgba(255,255,255,.08);
 
   font-size:52px;
 
   position:relative;
 }
+
 
 .crown::after{
 
@@ -162,7 +190,9 @@ body{
 
   border-radius:50%;
 
-  border:1px solid rgba(255,50,50,.35);
+  border:
+    1px solid
+    rgba(255,50,50,.35);
 }
 
 
@@ -170,7 +200,12 @@ body{
 
 .title{
 
-  font-size:clamp(54px,11vw,88px);
+  font-size:
+    clamp(
+      54px,
+      11vw,
+      88px
+    );
 
   line-height:.9;
 
@@ -178,16 +213,20 @@ body{
 
   letter-spacing:-3px;
 
-  color:#fff;
+  color:#ffffff;
 
   text-shadow:
-    0 4px 20px rgba(255,255,255,.08);
+    0 4px 20px
+    rgba(255,255,255,.08);
 
   margin-bottom:30px;
 }
 
+
 .title span{
+
   display:block;
+
 }
 
 
@@ -197,23 +236,26 @@ body{
 
   max-width:600px;
 
-  margin:0 auto 34px;
+  margin:0 auto;
 
   color:#e1d8d8;
 
   font-size:18px;
 
   line-height:1.7;
+
+  margin-bottom:34px;
 }
 
 
-/* BUTTON */
+/* JOIN BUTTON */
 
 .join-btn{
 
   display:flex;
 
   align-items:center;
+
   justify-content:center;
 
   gap:14px;
@@ -232,7 +274,7 @@ body{
 
   text-decoration:none;
 
-  color:#fff;
+  color:#ffffff;
 
   background:
     linear-gradient(
@@ -241,7 +283,9 @@ body{
       #c80000
     );
 
-  border:1px solid rgba(255,100,100,.65);
+  border:
+    1px solid
+    rgba(255,100,100,.65);
 
   font-size:22px;
 
@@ -250,8 +294,12 @@ body{
   letter-spacing:.5px;
 
   box-shadow:
-    0 12px 35px rgba(255,0,0,.28),
-    inset 0 1px 0 rgba(255,255,255,.15);
+
+    0 12px 35px
+    rgba(255,0,0,.28),
+
+    inset 0 1px 0
+    rgba(255,255,255,.15);
 
   transition:
     transform .2s ease,
@@ -264,6 +312,7 @@ body{
   overflow:hidden;
 }
 
+
 .join-btn::before{
 
   content:"";
@@ -271,9 +320,11 @@ body{
   position:absolute;
 
   top:0;
+
   left:-120%;
 
   width:80%;
+
   height:100%;
 
   background:
@@ -289,22 +340,34 @@ body{
   transition:left .6s ease;
 }
 
+
 .join-btn:hover::before{
+
   left:140%;
 }
 
+
 .join-btn:hover{
 
-  transform:translateY(-2px);
+  transform:
+    translateY(-2px);
 
   box-shadow:
-    0 16px 42px rgba(255,0,0,.38),
-    inset 0 1px 0 rgba(255,255,255,.15);
+
+    0 16px 42px
+    rgba(255,0,0,.38),
+
+    inset 0 1px 0
+    rgba(255,255,255,.15);
 }
 
+
 .join-btn:active{
-  transform:scale(.98);
+
+  transform:
+    scale(.98);
 }
+
 
 .telegram-icon{
 
@@ -315,6 +378,7 @@ body{
   z-index:1;
 }
 
+
 .join-text{
 
   position:relative;
@@ -323,7 +387,7 @@ body{
 }
 
 
-/* NOTE */
+/* SMALL NOTE */
 
 .note{
 
@@ -351,21 +415,28 @@ body{
   margin-top:40px;
 }
 
+
 .feature{
 
   min-height:125px;
 
-  padding:20px 12px;
+  padding:
+    20px 12px;
 
   border-radius:17px;
 
-  background:rgba(25,5,5,.72);
+  background:
+    rgba(25,5,5,.72);
 
-  border:1px solid rgba(255,255,255,.10);
+  border:
+    1px solid
+    rgba(255,255,255,.10);
 
   box-shadow:
-    0 10px 30px rgba(0,0,0,.25);
+    0 10px 30px
+    rgba(0,0,0,.25);
 }
+
 
 .feature-icon{
 
@@ -374,12 +445,16 @@ body{
   margin-bottom:12px;
 }
 
+
 .feature h3{
 
   font-size:15px;
 
   margin-bottom:7px;
+
+  color:#ffffff;
 }
+
 
 .feature p{
 
@@ -397,7 +472,8 @@ body{
 
   margin-top:35px;
 
-  padding:25px 18px;
+  padding:
+    25px 18px;
 
   border-radius:22px;
 
@@ -408,8 +484,11 @@ body{
       rgba(10,0,0,.95)
     );
 
-  border:1px solid rgba(255,35,35,.15);
+  border:
+    1px solid
+    rgba(255,35,35,.15);
 }
+
 
 .second-cta h2{
 
@@ -417,6 +496,7 @@ body{
 
   margin-bottom:8px;
 }
+
 
 .second-cta p{
 
@@ -428,6 +508,7 @@ body{
 
   margin-bottom:18px;
 }
+
 
 .second-cta .join-btn{
 
@@ -443,13 +524,17 @@ body{
 
   margin-top:25px;
 
-  padding:15px 17px;
+  padding:
+    15px 17px;
 
   border-radius:13px;
 
-  background:rgba(255,0,0,.045);
+  background:
+    rgba(255,0,0,.045);
 
-  border:1px solid rgba(255,50,50,.10);
+  border:
+    1px solid
+    rgba(255,50,50,.10);
 
   color:#8d7777;
 
@@ -476,8 +561,13 @@ body{
 @media(max-width:520px){
 
   .page{
-    padding:24px 13px 30px;
+
+    padding:
+      24px
+      13px
+      30px;
   }
+
 
   .top-label{
 
@@ -485,8 +575,10 @@ body{
 
     letter-spacing:2px;
 
-    padding:9px 16px;
+    padding:
+      9px 16px;
   }
+
 
   .crown{
 
@@ -498,13 +590,19 @@ body{
     margin-bottom:25px;
   }
 
+
   .title{
 
     font-size:
-      clamp(50px,16vw,72px);
+      clamp(
+        50px,
+        16vw,
+        72px
+      );
 
     letter-spacing:-2px;
   }
+
 
   .description{
 
@@ -513,6 +611,7 @@ body{
     padding:0 8px;
   }
 
+
   .join-btn{
 
     min-height:75px;
@@ -520,14 +619,18 @@ body{
     font-size:19px;
   }
 
+
   .features{
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:
+      1fr 1fr;
   }
+
 
   .feature:last-child{
 
-    grid-column:1 / -1;
+    grid-column:
+      1 / -1;
   }
 
 }
@@ -536,8 +639,10 @@ body{
 @media(max-width:360px){
 
   .title{
+
     font-size:48px;
   }
+
 
   .join-btn{
 
@@ -555,26 +660,36 @@ body{
 
 <body>
 
+
 <main class="page">
 
+
+  <!-- TOP LABEL -->
 
   <div class="top-label">
     OFFICIAL TELEGRAM COMMUNITY
   </div>
 
 
+  <!-- CROWN -->
+
   <div class="crown">
     ♛
   </div>
 
 
+  <!-- TITLE -->
+
   <h1 class="title">
 
     <span>MAFIA</span>
+
     <span>LEADER</span>
 
   </h1>
 
+
+  <!-- DESCRIPTION -->
 
   <p class="description">
 
@@ -605,7 +720,9 @@ body{
 
 
   <div class="note">
+
     Tap the button above to continue to Telegram
+
   </div>
 
 
@@ -719,6 +836,7 @@ body{
 
   </footer>
 
+
 </main>
 
 
@@ -732,6 +850,7 @@ body{
 
   const telegramButtons =
     document.querySelectorAll('.telegram-link');
+
 
   telegramButtons.forEach(function(button){
 
