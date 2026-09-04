@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MAFIA LEADER</title>
+
+
+<!-- =========================
+     META PIXEL
+========================= -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document, 'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1426986666015681');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img
+  height="1"
+  width="1"
+  style="display:none"
+  src="https://www.facebook.com/tr?id=1426986666015681&ev=PageView&noscript=1"
+/>
+</noscript>
+
+<!-- End Meta Pixel -->
+
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #300000 0%,
+      #120000 32%,
+      #050000 70%,
+      #000000 100%
+    );
+
+  color:#fff;
+
+  min-height:100vh;
+
+  overflow-x:hidden;
+}
+
+.page{
+  width:100%;
+  max-width:720px;
+
+  margin:0 auto;
+
+  padding:28px 16px 35px;
+
+  text-align:center;
+}
+
+
+/* TOP LABEL */
+
+.top-label{
+
+  display:inline-block;
+
+  padding:10px 22px;
+
+  border:1px solid rgba(255,35,35,.75);
+
+  border-radius:30px;
+
+  color:#ff3b3b;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:3px;
+
+  margin-bottom:30px;
+
+  box-shadow:
+    0 0 20px rgba(255,0,0,.12);
+}
+
+
+/* CROWN */
+
+.crown{
+
+  width:115px;
+  height:115px;
+
+  margin:0 auto 30px;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  background:
+    radial-gradient(
+      circle,
+      #ff2525 0%,
+      #a90000 65%,
+      #350000 100%
+    );
+
+  border:3px solid #ff3838;
+
+  box-shadow:
+    0 0 18px rgba(255,30,30,.9),
+    0 0 45px rgba(255,0,0,.35),
+    inset 0 0 25px rgba(255,255,255,.08);
+
+  font-size:52px;
+
+  position:relative;
+}
+
+.crown::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:-8px;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,50,50,.35);
+}
+
+
+/* TITLE */
+
+.title{
+
+  font-size:clamp(54px,11vw,88px);
+
+  line-height:.9;
+
+  font-weight:900;
+
+  letter-spacing:-3px;
+
+  color:#fff;
+
+  text-shadow:
+    0 4px 20px rgba(255,255,255,.08);
+
+  margin-bottom:30px;
+}
+
+.title span{
+  display:block;
+}
+
+
+/* DESCRIPTION */
+
+.description{
+
+  max-width:600px;
+
+  margin:0 auto 34px;
+
+  color:#e1d8d8;
+
+  font-size:18px;
+
+  line-height:1.7;
+}
+
+
+/* BUTTON */
+
+.join-btn{
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  gap:14px;
+
+  width:100%;
+
+  max-width:600px;
+
+  min-height:82px;
+
+  margin:0 auto;
+
+  padding:18px 25px;
+
+  border-radius:18px;
+
+  text-decoration:none;
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff3030,
+      #c80000
+    );
+
+  border:1px solid rgba(255,100,100,.65);
+
+  font-size:22px;
+
+  font-weight:900;
+
+  letter-spacing:.5px;
+
+  box-shadow:
+    0 12px 35px rgba(255,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+
+  cursor:pointer;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.join-btn::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-120%;
+
+  width:80%;
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.18),
+      transparent
+    );
+
+  transform:skewX(-20deg);
+
+  transition:left .6s ease;
+}
+
+.join-btn:hover::before{
+  left:140%;
+}
+
+.join-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 16px 42px rgba(255,0,0,.38),
+    inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.join-btn:active{
+  transform:scale(.98);
+}
+
+.telegram-icon{
+
+  font-size:32px;
+
+  position:relative;
+
+  z-index:1;
+}
+
+.join-text{
+
+  position:relative;
+
+  z-index:1;
+}
+
+
+/* NOTE */
+
+.note{
+
+  margin-top:17px;
+
+  color:#8f7777;
+
+  font-size:13px;
+
+  line-height:1.5;
+}
+
+
+/* FEATURES */
+
+.features{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:13px;
+
+  margin-top:40px;
+}
+
+.feature{
+
+  min-height:125px;
+
+  padding:20px 12px;
+
+  border-radius:17px;
+
+  background:rgba(25,5,5,.72);
+
+  border:1px solid rgba(255,255,255,.10);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+.feature-icon{
+
+  font-size:28px;
+
+  margin-bottom:12px;
+}
+
+.feature h3{
+
+  font-size:15px;
+
+  margin-bottom:7px;
+}
+
+.feature p{
+
+  color:#947f7f;
+
+  font-size:12px;
+
+  line-height:1.4;
+}
+
+
+/* SECOND CTA */
+
+.second-cta{
+
+  margin-top:35px;
+
+  padding:25px 18px;
+
+  border-radius:22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(35,5,5,.9),
+      rgba(10,0,0,.95)
+    );
+
+  border:1px solid rgba(255,35,35,.15);
+}
+
+.second-cta h2{
+
+  font-size:24px;
+
+  margin-bottom:8px;
+}
+
+.second-cta p{
+
+  color:#9f8b8b;
+
+  font-size:14px;
+
+  line-height:1.5;
+
+  margin-bottom:18px;
+}
+
+.second-cta .join-btn{
+
+  min-height:65px;
+
+  font-size:18px;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer{
+
+  margin-top:25px;
+
+  padding:15px 17px;
+
+  border-radius:13px;
+
+  background:rgba(255,0,0,.045);
+
+  border:1px solid rgba(255,50,50,.10);
+
+  color:#8d7777;
+
+  font-size:11px;
+
+  line-height:1.6;
+}
+
+
+/* FOOTER */
+
+.footer{
+
+  margin-top:25px;
+
+  color:#594848;
+
+  font-size:11px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:520px){
+
+  .page{
+    padding:24px 13px 30px;
+  }
+
+  .top-label{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    padding:9px 16px;
+  }
+
+  .crown{
+
+    width:100px;
+    height:100px;
+
+    font-size:45px;
+
+    margin-bottom:25px;
+  }
+
+  .title{
+
+    font-size:
+      clamp(50px,16vw,72px);
+
+    letter-spacing:-2px;
+  }
+
+  .description{
+
+    font-size:16px;
+
+    padding:0 8px;
+  }
+
+  .join-btn{
+
+    min-height:75px;
+
+    font-size:19px;
+  }
+
+  .features{
+
+    grid-template-columns:1fr 1fr;
+  }
+
+  .feature:last-child{
+
+    grid-column:1 / -1;
+  }
+
+}
+
+
+@media(max-width:360px){
+
+  .title{
+    font-size:48px;
+  }
+
+  .join-btn{
+
+    font-size:17px;
+
+    min-height:70px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<main class="page">
+
+
+  <div class="top-label">
+    OFFICIAL TELEGRAM COMMUNITY
+  </div>
+
+
+  <div class="crown">
+    ♛
+  </div>
+
+
+  <h1 class="title">
+
+    <span>MAFIA</span>
+    <span>LEADER</span>
+
+  </h1>
+
+
+  <p class="description">
+
+    Enter the community. Get updates, exclusive content
+    and stay connected.
+
+  </p>
+
+
+  <!-- MAIN TELEGRAM BUTTON -->
+
+  <a
+    class="join-btn telegram-link"
+    href="https://t.me/+RIeYBFqLB3xkYzU1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <span class="telegram-icon">
+      ➤
+    </span>
+
+    <span class="join-text">
+      JOIN TELEGRAM NOW
+    </span>
+
+  </a>
+
+
+  <div class="note">
+    Tap the button above to continue to Telegram
+  </div>
+
+
+  <!-- FEATURES -->
+
+  <section class="features">
+
+
+    <div class="feature">
+
+      <div class="feature-icon">
+        ⚡
+      </div>
+
+      <h3>
+        FAST UPDATES
+      </h3>
+
+      <p>
+        Stay connected
+      </p>
+
+    </div>
+
+
+    <div class="feature">
+
+      <div class="feature-icon">
+        🔐
+      </div>
+
+      <h3>
+        PRIVATE
+      </h3>
+
+      <p>
+        Telegram community
+      </p>
+
+    </div>
+
+
+    <div class="feature">
+
+      <div class="feature-icon">
+        👑
+      </div>
+
+      <h3>
+        EXCLUSIVE
+      </h3>
+
+      <p>
+        Community content
+      </p>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- SECOND CTA -->
+
+  <section class="second-cta">
+
+    <h2>
+      Ready To Join?
+    </h2>
+
+    <p>
+      Tap below and join the official Telegram community.
+    </p>
+
+
+    <a
+      class="join-btn telegram-link"
+      href="https://t.me/+RIeYBFqLB3xkYzU1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <span class="telegram-icon">
+        ➤
+      </span>
+
+      <span class="join-text">
+        JOIN NOW
+      </span>
+
+    </a>
+
+  </section>
+
+
+  <!-- DISCLAIMER -->
+
+  <div class="disclaimer">
+
+    ⚠️ <strong>DISCLAIMER:</strong>
+    All content is provided for educational and informational
+    purposes only. No guaranteed results are promised.
+    Use information at your own risk.
+
+  </div>
+
+
+  <footer class="footer">
+
+    By continuing, you will be redirected to Telegram.
+
+  </footer>
+
+</main>
+
+
+<!-- =========================
+     TELEGRAM CLICK TRACKING
+========================= -->
+
+<script>
+
+(function(){
+
+  const telegramButtons =
+    document.querySelectorAll('.telegram-link');
+
+  telegramButtons.forEach(function(button){
+
+    button.addEventListener('click', function(){
+
+      if(typeof fbq === 'function'){
+
+        fbq(
+          'trackCustom',
+          'TelegramClick'
+        );
+
+      }
+
+    });
+
+  });
+
+})();
+
+</script>
+
+
+</body>
+</html>
